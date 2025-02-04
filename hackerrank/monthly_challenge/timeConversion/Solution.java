@@ -12,17 +12,22 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
-
-    /*
-     * Complete the 'timeConversion' function below.
-     *
-     * The function is expected to return a STRING.
-     * The function accepts STRING s as parameter.
-     */
-
     public static String timeConversion(String s) {
-        return "Hello";
-
+        if (s.charAt(8) == 'P') {
+            if (Integer.parseInt(s.substring(0, 2)) < 12) {
+                String res = String.valueOf(Integer.parseInt(s.substring(0, 2)) + 12);
+                res = res.concat(s.substring(2, 8));
+                return res;
+            } else return s.substring(0, 8);
+        } else {
+            if (Integer.parseInt(s.substring(0, 2)) < 12) {
+                return s.substring(0, 8);
+            } else {
+                String res = "00";
+                res = res.concat(s.substring(2, 8));
+                return res;
+            }
+        }
     }
 
 }
