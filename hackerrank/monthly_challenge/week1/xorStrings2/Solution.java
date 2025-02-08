@@ -1,6 +1,5 @@
-package xorStrings2;
+package week1.xorStrings2;
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {

@@ -1,21 +1,13 @@
-package flippingBits;
+package week1.flippingBits;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
-    class Result {
+class Result {
 
         /*
-         * Complete the 'flippingBits' function below.
+         * Complete the 'week1.flippingBits' function below.
          *
          * The function is expected to return a LONG_INTEGER.
          * The function accepts LONG_INTEGER n as parameter.
