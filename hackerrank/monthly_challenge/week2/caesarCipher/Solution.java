@@ -1,4 +1,4 @@
-package week2.ceaserCipher;
+package week2.caesarCipher;
 
 import java.util.Scanner;
 
